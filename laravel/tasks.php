@@ -26,7 +26,11 @@ $orders = null; // TODO: assign Eloquent query result to $orders
 function userStoreRules(): array
 {
     // TODO: return array of Laravel validation rules
-    return [];
+    return [
+        'name' => ['require|string|min:2|max:60'],
+        'email' => ['required|email|unique'],
+        'password' => ['required|min:8|confirmed']
+    ];
 }
 
 // ------------------------------------------------------------
@@ -46,6 +50,7 @@ class Order extends Model
     // TODO: paste the scope here
     // public function scopeRecentDays(Builder $query, int $days)
     // {
+    //    
     // }
 }
 */
