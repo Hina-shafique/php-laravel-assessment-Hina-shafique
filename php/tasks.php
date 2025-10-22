@@ -13,6 +13,7 @@
 // ------------------------------------------------------------
 function firstUniqueChar(string $s): ?string {
     // TODO: implement
+    
     return null;
 }
 

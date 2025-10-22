@@ -15,6 +15,9 @@ use App\Models\Order;
 // Save result in $orders
 // ------------------------------------------------------------
 $orders = null; // TODO: assign Eloquent query result to $orders
+if($total_amount > 100){
+    
+}
 
 // ------------------------------------------------------------
 // Task 2 — FormRequest rules for storing a User
@@ -50,7 +53,7 @@ class Order extends Model
     // TODO: paste the scope here
     // public function scopeRecentDays(Builder $query, int $days)
     // {
-    //    
+            $query = var_filter(crated_at::$day);
     // }
 }
 */

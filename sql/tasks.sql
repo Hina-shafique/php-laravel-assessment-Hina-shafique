@@ -9,12 +9,18 @@
 -- Sort: order_count DESC
 -- TODO: Write the SQL below
 SELECT
-  -- TODO
+* FROM users
+JOIN o ON u.id = o.user_id
+COUNT o ON order_id
+ -- TODO
 ;
 
 -- Task 2 — Products never ordered
 -- Return: id, name of products that appear in ZERO order_items
 -- TODO: Write the SQL below
 SELECT
+* FROM order_items
+Where qunatity = 0;
+
   -- TODO
 ;
